@@ -1,0 +1,16 @@
+.text-center {
+    text-align: center;
+    height: 50px;
+    background-color: azure;
+    color: black;
+
+}
+.list-page {
+    position: relative;
+    .btn {
+        position: fixed;
+        right: 10px;
+        top: calc(50vh - 20px);
+        z-index: 10;
+    }
+}

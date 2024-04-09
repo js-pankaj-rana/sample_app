@@ -1,5 +1,5 @@
 import React, {useContext, useEffect, useState} from 'react';
-import { Button, Col, Row, Typography } from 'antd';
+import { Button, Col, Row, Spin, Typography } from 'antd';
 import {AppContext} from './../context/appContext'
 import './../asset/style.scss';
 import { CardComponent } from './CardComponent';
@@ -85,7 +85,7 @@ const {Title} = Typography
       )  
     )
    }
-  {loader && <Col span={24}><p className='text-center'>Loading....</p></Col>}
+  {loader && <Col span={24}><div className='text-center'> <Spin /></div></Col>}
   </Row>
   
   </div>

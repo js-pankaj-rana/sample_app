@@ -36,7 +36,7 @@ const DashBoard: React.FC = () => {
                         return;
                 }  
                 )}
-                { listData.data.length === 0 && <Col span={24}><p>No favorite list found</p></Col>}
+                { listData.favorite.length === 0 && <Col span={24}><p>No favorite list found available here..</p></Col>}
         </Row>
         </>
     </ErrorWrapper>  
